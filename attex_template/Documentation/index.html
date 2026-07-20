@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Attex - Bootstrap 5 Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                        <span class="badge badge-primary ml-3 font-18">Laravel</span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+
+                    <span class="badge badge-danger float-right">v1.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Customization
+                                    </span>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Layout & Themes
+                                    </a>
+
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <!-- <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a> -->
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h4 class="mt-0 mb-2 font-weight-semibold">Introduction</h4>
+
+                                    <p>Attex Laravel is a fully featured premium admin template built on top of
+                                        awesome <strong class="text-danger">Bootstrap v5.3.0-alpha1</strong> and <strong class="text-danger">Laravel 10</strong>. Laravel is a web application framework with expressive, elegant syntax.
+
+                                        It comes with a strong collection of tools and provides application architecture
+                                        It's crafted using modern web technologies <strong class="text-danger">PHP (Laravel 10), HTML5, CSS3 </strong>and <strong class="text-danger">jQuery</strong>.
+                                        The theme includes beautiful dashboard, many ready to use hand crafted components,
+                                        widgets, pages, etc. The components can be used very easily on any
+                                        page. The theme is fully responsive and customizable.</p>
+
+                                    <p>It's a powerful and super flexible, which suits best for web
+                                        applications including CRM, CMS, Admin Panels, Dashboards, etc. It
+                                        is fully responsive, which means that it looks perfect on mobiles
+                                        and tablets. Also, we tried to implement this by keeping the concept
+                                        of modularity in mind, this enables you to reduce the development
+                                        time and cost.</p>
+
+                                    <p>This documentation is guidelines for all users who can even be a
+                                        beginner or experienced web developer.</p>
+
+                                    <p>We really care for our customers and so in case if you are having any
+                                        question or feedback, please feel free to get back to us via email
+                                        <code>support@coderthemes.com</code> or by filling out the contact
+                                        form on our <a href="http://coderthemes.com/#contact" target="_blank">website</a>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card m-b-30">
+                                <div class="card-body">
+
+                                    <h4 class="mt-0 mb-2 font-weight-semibold">Structure</h4>
+
+                                    <p>Extract the zip file you received after purchase and you would find the exact below
+                                        files and folders:
+                                    </p>
+
+                                    <pre>
+
+├── docs
+└── Attex
+│   ├── app
+│   ├── bootstrap
+│   ├── composer.json - Laravel php dependencies
+│   ├── config
+│   ├── database
+│   ├── public
+│   ├── resources/
+│   │   └── data
+│   │   └── fonts
+│   │   └── images
+│   │   └── js
+│   │   └── lang
+│   │   └── scss
+│   │   └── views
+│   │       └── layout
+│   │       └── multiple folders having all pages, apps, etc
+│   ├── routes
+│   ├── storage
+│   ├── tests
+│   ├── vite.config.js - Vite configuration File
+│   ├── package.json
+│   └── yarn.lock
+                                                </pre>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 mb-2 font-weight-bold">Credits/Plugins</h4>
+                                    <p>
+                                        We are incredibly grateful to the creators of the following
+                                        plugins, without which the development of Attex would not
+                                        have been possible. Each of these plugins comes with its own
+                                        official documentation, and we highly recommend that you
+                                        refer to them while building your project with Attex.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="table-responsive">
+                                                <table class="table table-sm mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Plugins</th>
+                                                            <th>Url</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bootstrap</td>
+                                                            <td>
+                                                                <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>jQuery</td>
+                                                            <td>
+                                                                <a href="https://jquery.com/" target="_blank">https://jquery.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Toast</td>
+                                                            <td>
+                                                                <a href="https://kamranahmed.info/toast" target="_blank">https://kamranahmed.info/toast</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Remixicon</td>
+                                                            <td>
+                                                                <a href="https://remixicon.com/" target="_blank">https://remixicon.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Select2</td>
+                                                            <td>
+                                                                <a href="https://select2.org/" target="_blank">https://select2.org/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Daterangepicker</td>
+                                                            <td>
+                                                                <a href="http://www.daterangepicker.com/#options" target="_blank">http://www.daterangepicker.com/#options</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Input Mask</td>
+                                                            <td>
+                                                                <a href="https://github.com/igorescobar/jQuery-Mask-Plugin" target="_blank">https://github.com/igorescobar/jQuery-Mask-Plugin</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Form Wizard</td>
+                                                            <td>
+                                                                <a href="http://vinceg.github.io/twitter-bootstrap-wizard/" target="_blank">http://vinceg.github.io/twitter-bootstrap-wizard/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flatpickr</td>
+                                                            <td>
+                                                                <a href="https://flatpickr.js.org/" target="_blank">https://flatpickr.js.org/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Chartjs</td>
+                                                            <td>
+                                                                <a href="http://www.chartjs.org/" target="_blank">http://www.chartjs.org/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Brite Charts</td>
+                                                            <td>
+                                                                <a href="https://github.com/eventbrite/britecharts" target="_blank">https://github.com/eventbrite/britecharts</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Datatables</td>
+                                                            <td>
+                                                                <a href="https://datatables.net/" target="_blank">https://datatables.net/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Calendar</td>
+                                                            <td>
+                                                                <a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Google Maps</td>
+                                                            <td>
+                                                                <a href="https://hpneo.github.io/gmaps/examples.html" target="_blank">https://hpneo.github.io/gmaps/examples.html</a>
+                                                            </td>
+                                                        </tr>
+        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="table-responsive">
+                                                <table class="table table-sm mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Plugins</th>
+                                                            <th>Url</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Jvectormap</td>
+                                                            <td>
+                                                                <a href="http://jvectormap.com/" target="_blank">http://jvectormap.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ion Range Slider</td>
+                                                            <td>
+                                                                <a href="http://ionden.com/a/plugins/ion.rangeSlider/index.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/index.html</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Undraw (Graphics)</td>
+                                                            <td>
+                                                                <a href="https://undraw.co/illustrations" target="_blank">https://undraw.co/illustrations</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Simplebar</td>
+                                                            <td>
+                                                                <a href="https://github.com/Grsmto/simplebar" target="_blank">https://github.com/Grsmto/simplebar</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dragula Js</td>
+                                                            <td>
+                                                                <a href="https://github.com/bevacqua/dragula" target="_blank">https://github.com/bevacqua/dragula</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dropzone js</td>
+                                                            <td>
+                                                                <a href="https://www.dropzonejs.com/" target="_blank">https://www.dropzonejs.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Touchspin</td>
+                                                            <td>
+                                                                <a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin" target="_blank">https://github.com/istvan-ujjmeszaros/bootstrap-touchspin</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Maxlength</td>
+                                                            <td>
+                                                                <a href="https://mimo84.github.io/bootstrap-maxlength/" target="_blank">https://mimo84.github.io/bootstrap-maxlength/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Timepicker</td>
+                                                            <td>
+                                                                <a href="https://jdewit.github.io/bootstrap-timepicker/" target="_blank">https://jdewit.github.io/bootstrap-timepicker/</a>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr>
+                                                            <td>SimpleMDE Editor</td>
+                                                            <td>
+                                                                <a href="https://simplemde.com/" target="_blank">https://simplemde.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Apex Charts</td>
+                                                            <td>
+                                                                <a href="https://apexcharts.com/" target="_blank">https://apexcharts.com/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Typeahead</td>
+                                                            <td>
+                                                                <a href="https://twitter.github.io/typeahead.js/" target="_blank">https://twitter.github.io/typeahead.js/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Datepicker</td>
+                                                            <td>
+                                                                <a href="https://bootstrap-datepicker.readthedocs.io/en/latest/" target="_blank">https://bootstrap-datepicker.readthedocs.io/en/latest/</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rateit</td>
+                                                            <td>
+                                                                <a href="https://github.com/gjunge/rateit.js" target="_blank">https://github.com/gjunge/rateit.js</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end page-wrapper-->
+                </div>
+
+            </div>
+            <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2015 - 2021 © Attex - by Coderthemes
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="http://coderthemes.com/" target="_blank">About</a>
+                                <a href="http://coderthemes.com/#contact" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- bundle -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

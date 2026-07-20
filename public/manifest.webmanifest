@@ -1,0 +1,62 @@
+{
+  "id": "/",
+  "name": "SIPENCAK LLDIKTI III",
+  "short_name": "SIPENCAK",
+  "description": "Sistem pengelolaan pencairan KIP Kuliah LLDIKTI Wilayah III.",
+  "lang": "id-ID",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0f5a8f",
+  "categories": ["education", "finance", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/logo-lldikti3.jpg",
+      "sizes": "900x900",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/attex/images/logo-sm.png",
+      "sizes": "70x70",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Buka dashboard SIPENCAK.",
+      "url": "/",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Notifikasi",
+      "short_name": "Notifikasi",
+      "description": "Buka pusat notifikasi.",
+      "url": "/notifications",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/img/sipencak3.png",
+      "sizes": "600x148",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Logo SIPENCAK"
+    }
+  ],
+  "prefer_related_applications": false
+}

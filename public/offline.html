@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f5a8f">
+  <title>SIPENCAK Offline</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --blue: #0f5a8f;
+      --ink: #162333;
+      --muted: #67768a;
+      --line: #d8e5f1;
+      --soft: #eef6fc;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: linear-gradient(180deg, #f8fbfe 0%, #edf5fb 100%);
+      color: var(--ink);
+    }
+    .offline-card {
+      width: min(100%, 520px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 22px 55px rgba(15, 90, 143, 0.14);
+      padding: 32px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+    }
+    .brand img { width: 48px; height: 48px; object-fit: contain; }
+    h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 40px); line-height: 1.05; }
+    p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    a, button {
+      min-height: 44px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      padding: 0 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button { background: var(--blue); border-color: var(--blue); color: #fff; }
+    a { background: var(--soft); color: var(--blue); }
+    @media (prefers-color-scheme: dark) {
+      body { background: #17202b; color: #edf4fb; }
+      .offline-card { background: #202a36; border-color: #314154; }
+      p { color: #b8c7d8; }
+      a { background: #27394c; border-color: #3a536b; }
+    }
+  </style>
+</head>
+<body>
+  <main class="offline-card">
+    <div class="brand">
+      <img src="/pwa-icon.svg" alt="">
+      <span>SIPENCAK</span>
+    </div>
+    <h1>Koneksi sedang offline.</h1>
+    <p>Halaman ini belum bisa dimuat karena jaringan tidak tersedia. Beberapa aset aplikasi tetap disimpan agar SIPENCAK bisa dibuka kembali lebih cepat saat koneksi pulih.</p>
+    <div class="actions">
+      <button type="button" onclick="window.location.reload()">Coba Lagi</button>
+      <a href="/">Kembali ke Dashboard</a>
+    </div>
+  </main>
+</body>
+</html>
